@@ -40,9 +40,10 @@ oasTools.initialize(oasDoc, app, function() {
 
 const port = 8000
 
-app.get('/', (req, res) => {
+app.post('/HelloWorld', (req, res) => {
   res.send('Hello World!')
 });
+
 
 app.listen(port,() =>{
   console.log("Initilisation du serveur")
